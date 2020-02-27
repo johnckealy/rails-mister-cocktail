@@ -1,0 +1,37 @@
+
+<div class="banner">
+  <h1><%= @cocktail.name %> </h1>
+
+
+    <%= link_to @cocktail, method: :delete, data: { confirm: "Delete #{@cocktail.name}?" } do %>
+      <i class="fas fa-trash-alt"></i>
+    <% end %>
+
+    <%= link_to edit_cocktail_path do %>
+      <i class="fas fa-edit"></i>
+    <% end %>
+
+
+</div>
+
+
+<div class="container">
+  <div class="row p-5">
+    <div class="col-md-6">
+    </div>
+    <div class="col-md-6">
+      <h3 style="padding-left: 40px;">Ingredients</h3>
+      <ul>
+        <% @doses.each do |dose|  %>
+          <li><strong><%= dose.ingredient.name %></strong>: <%= dose.description %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!--   <%# @doses.each do |dose| %>
+    <h2><%#= dose.description %><%#=  dose.ingredient.name %></h2>
+  <%# end %> -->
+

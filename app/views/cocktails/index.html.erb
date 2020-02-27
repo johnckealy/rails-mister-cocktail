@@ -1,0 +1,19 @@
+<h1>Welcome to Mr. Cocktail!</h1>
+
+
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-md-4">
+
+        <%= link_to cocktail_path(cocktail), :action => 'go' do %>
+          <div class="card-product">
+            <h2><%= cocktail.name %></h2>
+          </div>
+        <% end %>
+
+      </div>
+    <% end %>
+  </div>
+</div>
+

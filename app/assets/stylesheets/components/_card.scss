@@ -1,0 +1,20 @@
+
+// $url: "https://source.unsplash.com/1600x900/?cocktail";
+$url: "";
+
+.card-product {
+  height: 300px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  align-items: center;
+  justify-content: center;
+  background-image: url($url);
+  background-size: cover;
+  display: flex;
+  margin: 20px;
+
+  h2 {
+    // font-size: 1.2em;
+  }
+}
+
+
