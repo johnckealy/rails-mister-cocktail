@@ -1,14 +1,14 @@
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(mojito.jpeg);
+  // background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(mojito.jpeg);
   background-size: cover;
   color: white;
   width: 100vw;
-  height: 300px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   h1 {
-    font-size: 2.6em;
+    font-size: 3.6em;
   }
 
   i {

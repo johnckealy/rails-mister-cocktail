@@ -1,5 +1,7 @@
 
-<div class="banner">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @cocktail.image_pth(options = { banner: true }) %>)">
+
+
   <h1><%= @cocktail.name %> </h1>
 
     <%= link_to @cocktail, method: :delete, data: { confirm: "#{@cocktail.name} will be deleted. Cool?" } do %>
@@ -21,10 +23,11 @@
       <h3 style="padding-left: 40px;">Ingredients</h3>
       <ul>
         <% @doses.each do |dose|  %>
-          <li><strong><%= dose.ingredient.name %></strong>: <%= dose.description %></li>
+          <li><strong><%= dose.ingredient.name %></strong>: <%= dose.description %>
             <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete do %>
               <i class="fas fa-trash-alt"></i>
             <% end %>
+          </li>
         <% end %>
       </ul>
       <%= link_to "Add an ingredient +", new_cocktail_dose_path(@cocktail) %>

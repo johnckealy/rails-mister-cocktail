@@ -5,13 +5,17 @@
       <div class="col-md-4">
 
         <%= link_to cocktail_path(cocktail) do %>
-          <div class="card-product">
+
+          <div class="card-product" style="background-image: url( <%= cocktail.image_pth %>);" >
             <h2><%= cocktail.name %></h2>
           </div>
+
         <% end %>
 
       </div>
     <% end %>
   </div>
 </div>
+
+
 
