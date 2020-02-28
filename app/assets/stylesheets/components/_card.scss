@@ -7,23 +7,29 @@ $url: "";
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   align-items: center;
   justify-content: center;
-  background-image: url($url);
+  // background-image: url($url);
   background-size: cover;
   display: flex;
   margin: 20px;
 
   h2 {
     text-align: center;
+    font-size: 3.0em;
   }
 }
 
 
 .card-ingredients {
-  height: 300px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 15px 2px gray;
+  background-color: #FCEDED;
+  padding: 20px;
 
-  h2 {
-    text-align: center;
+  h3 {
+    font-family: $list-font;
+  }
+
+  li {
+    font-family: $body-font;
   }
 }
