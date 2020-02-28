@@ -33,3 +33,19 @@ $url: "";
     font-family: $body-font;
   }
 }
+
+
+.card-search-resultsh1 {
+  border-radius: 4px;
+  box-shadow: 1px 1px 7px 2px gray;
+  background-color: #FCEDED;
+  // padding: 20px;
+  // font-family: $list-font;
+  font-family: $body-font;
+  width: 60vw;
+  margin:  20px 0 20px 90px;
+  h2 {
+    padding: 10px;
+    color: black;
+  }
+}

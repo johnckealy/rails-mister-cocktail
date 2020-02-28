@@ -5,7 +5,8 @@ const loadDynamicBannerText = () => {
   new Typed('#banner-typed-text', {
     strings: ["1. Create your own cocktail", "2. Drink the cocktail", "3. Cause a public disturbance"],
     typeSpeed: 50,
-    loop: true
+    loop: true,
+    startDelay: 2000
   });
 }
 

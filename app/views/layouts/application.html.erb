@@ -17,9 +17,17 @@
     <div class="navbar-lewagon">
       <%= image_tag 'logo.jpg' %>
 
+      <form id="search-bar" novalidate="novalidate" class="" action="/search" method="get">
+        <input id="search-bar-input" name="query" placeholder="Find a cocktail.." value="" />
+          <button  type="submit" class="btn btn-flat">
+            <i class="fas fa-search"></i> Search
+          </button>
+      </form>
+
+
       <div class="nav-links">
         <%=  link_to "Mix your Cocktail", new_cocktail_path %>
-        <%=  link_to "See our Cocktails", cocktails_path %>
+        <%=  link_to "See all Cocktails", cocktails_path %>
       </div>
     </div>
     <%= yield %>

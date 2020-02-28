@@ -6,7 +6,12 @@ class CocktailsController < ApplicationController
   def show
     @cocktail = Cocktail.find(params[:id])
     @doses = Dose.where(cocktail_id: @cocktail.id)
-    # raise
+  end
+
+  def search
+    @results = Cocktail.where('name ILIKE ?', params[:query])
+    @query = params[:query]
+    @v = @results.length == 1 ? "result" : "results"
   end
 
   def new

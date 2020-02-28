@@ -68,3 +68,7 @@ gem 'simple_form'
 # cloud storage of images
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.12.0'
+
+# for the seed
+require 'open-uri'
+require 'json'
