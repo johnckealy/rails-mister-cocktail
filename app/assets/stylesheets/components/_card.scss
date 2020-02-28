@@ -2,7 +2,7 @@
 // $url: "https://source.unsplash.com/1600x900/?cocktail";
 $url: "";
 
-.card-product {
+.card-cocktail {
   height: 300px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   align-items: center;
@@ -18,3 +18,12 @@ $url: "";
 }
 
 
+.card-ingredients {
+  height: 300px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 20px;
+
+  h2 {
+    text-align: center;
+  }
+}
