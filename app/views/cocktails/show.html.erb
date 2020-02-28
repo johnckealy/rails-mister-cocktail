@@ -2,15 +2,13 @@
 <div class="banner">
   <h1><%= @cocktail.name %> </h1>
 
-
-    <%= link_to @cocktail, method: :delete, data: { confirm: "Delete #{@cocktail.name}?" } do %>
+    <%= link_to @cocktail, method: :delete, data: { confirm: "#{@cocktail.name} will be deleted. Cool?" } do %>
       <i class="fas fa-trash-alt"></i>
     <% end %>
 
     <%= link_to edit_cocktail_path do %>
       <i class="fas fa-edit"></i>
     <% end %>
-
 
 </div>
 
@@ -24,8 +22,12 @@
       <ul>
         <% @doses.each do |dose|  %>
           <li><strong><%= dose.ingredient.name %></strong>: <%= dose.description %></li>
+            <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete do %>
+              <i class="fas fa-trash-alt"></i>
+            <% end %>
         <% end %>
       </ul>
+      <%= link_to "Add an ingredient +", new_cocktail_dose_path(@cocktail) %>
     </div>
   </div>
 </div>

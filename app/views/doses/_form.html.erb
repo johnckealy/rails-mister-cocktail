@@ -1,0 +1,14 @@
+<div class="container">
+
+  <%= simple_form_for [@cocktail, @dose]  do |f| %>
+    <%= f.input :description, placeholder: 'e.g. 3 parts..' %>
+    <%= f.association :ingredient %>
+    <!-- can I add an error for duplicate ingredients later? ask a teacher -->
+
+    <%= f.submit %>
+  <% end %>
+</div>
+
+
+
+
