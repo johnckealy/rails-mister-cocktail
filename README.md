@@ -1,24 +1,5 @@
-# README
+# Mr Cocktail
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This was an exercise during the LeWagon bootcamp. You can still find it at https://mr-cocktail-keals.herokuapp.com/. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I wouldn't take it too seriously. 
